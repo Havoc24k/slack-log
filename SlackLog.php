@@ -18,12 +18,12 @@ class SlackLog
     const DEBUG     = 'debug';
 
     /**
-     * Match each error level to a Slack Icon.
+     * Match each log level to a Slack Icon.
      * @var [type]
      */
     private $logLevelIconPrefixes = [
         self::EMERGENCY => ":radioactive_sign: *[EMERGENCY]*",
-        self::ALERT => ":fire:[ALERT]",
+        self::ALERT => ":fire: *[ALERT]*",
         self::CRITICAL => ":ambulance: *[CRITICAL]*",
         self::ERROR => ":x: *[ERROR]*",
         self::WARNING => ":warning: *[WARNING]*",
