@@ -29,8 +29,15 @@ private $username = "";
 ## Usage
 
 ```php
-$slack = new SlackLog();
-$slack->error("This is a slack notification", "#general");
+$slack = new SlackLog("#general");
+$slack->emergency("This is a slack `emergency` notification");
+$slack->alert("This is a slack `alert` notification");
+$slack->critical("This is a slack `critical` notification");
+$slack->error("This is a slack `error` notification");
+$slack->warning("This is a slack `warning` notification");
+$slack->notice("This is a slack `notice` notification");
+$slack->info("This is a slack `info` notification");
+$slack->debug("This is a slack `debug` notification");
 ```
 
 You can find more informattion about message formatting here, https://api.slack.com/docs/message-formatting.
