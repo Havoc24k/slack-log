@@ -29,7 +29,7 @@ private $username = "";
 ## Usage
 
 ```php
-$slack = new SlackLog("#general");
+$slack = new SlackLogger("#general");
 $slack->emergency("This is a slack `emergency` notification");
 $slack->alert("This is a slack `alert` notification");
 $slack->critical("This is a slack `critical` notification");
