@@ -26,6 +26,15 @@ private $incomingWebhookURL = "";
 private $username = "";
 ```
 
+## Usage
+
+```php
+$slack = new SlackLog();
+$slack->error("This is a slack notification", "#general");
+```
+
+You can find more informattion about message formatting here, https://api.slack.com/docs/message-formatting.
+
 <br/>
 <br/>
 
